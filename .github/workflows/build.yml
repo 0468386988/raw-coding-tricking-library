@@ -10,7 +10,7 @@ jobs:
       - name: Pull Code
         uses: actions/checkout@v2
       - name: Print Current Directory
-        run: pwdRe
+        run: pwd
       - name: List Files in Directory
         run: ls
       - name: Check Dotnet Cli
