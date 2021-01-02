@@ -4,7 +4,7 @@
       <v-toolbar-title>Tricking Library</v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <video-upload/>
+      <content-creation-dialog></content-creation-dialog>
     </v-app-bar>
     <v-main>
       <nuxt/>
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import VideoUpload from "../components/video-upload";
+import ContentCreationDialog from "../components/content-creation/content-creation-dialog";
 export default {
-  components: {VideoUpload},
+  components: {ContentCreationDialog},
 }
 </script>
