@@ -8,6 +8,7 @@
            :src="`http://localhost:5000/api/videos/${video.videoLink}`"
            :poster="`http://localhost:5000/api/videos/${video.thumbLink}`"
            preload="none"
+           playsinline
     ></video>
   </div>
 </template>
@@ -19,7 +20,7 @@ export default {
   props: {
     video: {
       required: true,
-      type: String,
+      type: Object,
     }
   },
   data: () => ({
